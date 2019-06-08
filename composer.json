@@ -2,6 +2,7 @@
     "name": "greenter/dompdf",
     "description": "Dompdf to greenter",
     "type": "library",
+    "homepage": "https://github.com/ajahuanex/dompdf-greenter",
     "require": {
         "dompdf/dompdf": "^0.8.3",
         "greenter/core": "^2.1"
@@ -13,5 +14,9 @@
     "authors": [{
         "name": "Juan Carlos",
         "email": "ajahuana@hotmail.com"
-    }]
+    }],
+
+    "suggest": {
+        "greenter/report": "Html Reporter"
+    }
 }
