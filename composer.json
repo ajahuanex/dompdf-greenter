@@ -1,20 +1,28 @@
 {
-    "name": "greenter/dompdf",
+    "name": "webmaster/dompdf-greenter",
     "description": "Dompdf to greenter",
     "type": "library",
     "homepage": "https://github.com/ajahuanex/dompdf-greenter",
+    "license": "MIT",
+    "authors": [{
+        "name": "Juan Carlos",
+        "email": "ajahuana@hotmail.com"
+    }],
     "require": {
+        "php": ">=5.5.9",
         "dompdf/dompdf": "^0.8.3",
         "greenter/core": "^2.1"
     },
     "require-dev": {
         "phpunit/phpunit": "^8.2"
     },
-    "license": "MIT",
-    "authors": [{
-        "name": "Juan Carlos",
-        "email": "ajahuana@hotmail.com"
-    }],
+    "autoload": {
+        "psr-4": {
+            "Greenter\\": "src/"
+        }
+    },
+
+
 
     "suggest": {
         "greenter/report": "Html Reporter"
