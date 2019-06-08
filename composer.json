@@ -1,5 +1,5 @@
 {
-    "name": "webmaster/dompdf-greenter",
+    "name": "greenter/dompdf",
     "description": "Dompdf to greenter",
     "type": "library",
     "require": {
@@ -10,10 +10,8 @@
         "phpunit/phpunit": "^8.2"
     },
     "license": "MIT",
-    "authors": [
-        {
-            "name": "Juan Carlos",
-            "email": "ajahuana@hotmail.com"
-        }
-    ]
+    "authors": [{
+        "name": "Juan Carlos",
+        "email": "ajahuana@hotmail.com"
+    }]
 }
