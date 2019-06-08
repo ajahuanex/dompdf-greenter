@@ -4,7 +4,7 @@
  * 
  */
 
-namespace Greenter\Report;
+namespace Webmaster\Report;
 
 use Greenter\Model\DocumentInterface;
 use \Dompdf\Dompdf;
