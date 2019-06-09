@@ -22,7 +22,7 @@
         }
     },
     "config": {
-        "vendor-dir": "greenter/"
+        "vendor-dir": "vendor/greenter/"
     },
 
     "suggest": {
