@@ -1,5 +1,5 @@
 {
-    "name": "webmaster/dompdf-greenter",
+    "name": "webmaster/dompdf",
     "description": "Dompdf to greenter",
     "type": "library",
     "homepage": "https://github.com/ajahuanex/dompdf-greenter",
@@ -21,8 +21,9 @@
             "Webmaster\\": "src/"
         }
     },
-
-
+    "config": {
+        "vendor-dir": "greenter/"
+    },
 
     "suggest": {
         "greenter/report": "Html Reporter"
