@@ -8,3 +8,15 @@
 - Support Greenter;
 - No necesita la funcionalidad `exec()` en php;
 - Funciona de `Shared Hosting`(Hosting compartido);
+
+
+### Instalar librería
+
+`composer require webmaster/dompdf-greenter`
+
+#### Editar el archivo `config/services.wml`
+ 
+`Webmaster\Report\DompdfReport:`
+        `rguments: ['@App\Service\HtmlReportDecorator']`
+        
+
