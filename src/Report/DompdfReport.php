@@ -7,6 +7,7 @@
 namespace Webmaster\Report;
 
 use Greenter\Model\DocumentInterface;
+use Greenter\Report\ReportInterface;
 use \Dompdf\Dompdf;
 
 /**
