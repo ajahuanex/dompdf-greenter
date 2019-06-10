@@ -14,9 +14,7 @@
 
 `composer require webmaster/dompdf-greenter`
 
-#### Editar el archivo `config/services.wml`
- 
-`Webmaster\Report\DompdfReport:`
-        `rguments: ['@App\Service\HtmlReportDecorator']`
+#### Editar el archivo `lycet/config/services.wml`
+ ![](https://github.com/ajahuanex/dompdf-greenter/blob/master/assets/Screenshot_30.png)
         
 
