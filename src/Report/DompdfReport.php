@@ -1,8 +1,4 @@
 <?php
-/**
- * Pruba 01
- * 
- */
 
 namespace Webmaster\Report;
 
@@ -39,8 +35,8 @@ class DompdfReport implements ReportInterface
     {
         $this->htmlReport = $htmlReport;
         $this->pdfRender = new Dompdf([
-            'no-outline', // Make Chrome not complain
         ]);
+        $this->pdfRender->set_option('dpi', '135');
     }
 
     /**
