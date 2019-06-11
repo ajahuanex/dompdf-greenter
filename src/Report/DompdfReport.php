@@ -34,9 +34,14 @@ class DompdfReport implements ReportInterface
     public function __construct(ReportInterface $htmlReport)
     {
         $this->htmlReport = $htmlReport;
-        $this->pdfRender = new Dompdf([
-        ]);
-        $this->pdfRender->set_option('dpi', '135');
+        $options = new \Dompdf\Options();
+        $options->setDpi(96);
+        $options->setDefaultPaperSize('A4');
+        $options->setIsHtml5ParserEnabled(true);
+        $options->setDefaultMediaType('all');
+        $options->setIsFontSubsettingEnabled(true);
+        
+        $this->pdfRender = new Dompdf($options);
     }
 
     /**
