@@ -35,11 +35,11 @@ class DompdfReport implements ReportInterface
     {
         $this->htmlReport = $htmlReport;
         $options = new \Dompdf\Options();
-        $options->setDpi(120);
+        $options->setDpi(112);
         $options->setDefaultPaperSize('A4');
-        $options->setIsHtml5ParserEnabled(true);
         $options->setDefaultMediaType('print');
         $options->setIsFontSubsettingEnabled(true);
+        $options->setFontHeightRatio(0.7);
         
         $this->pdfRender = new Dompdf($options);
     }
@@ -89,7 +89,6 @@ class DompdfReport implements ReportInterface
 
     private function buildPdf($html)
     {
-        // $this->domRender->setPaper('A4', 'landscape');
         $this->pdfRender->loadHtml($html);
         $this->pdfRender->render();
         return $this->pdfRender->stream();
