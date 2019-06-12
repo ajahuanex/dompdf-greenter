@@ -35,10 +35,10 @@ class DompdfReport implements ReportInterface
     {
         $this->htmlReport = $htmlReport;
         $options = new \Dompdf\Options();
-        $options->setDpi(96);
+        $options->setDpi(120);
         $options->setDefaultPaperSize('A4');
         $options->setIsHtml5ParserEnabled(true);
-        $options->setDefaultMediaType('all');
+        $options->setDefaultMediaType('print');
         $options->setIsFontSubsettingEnabled(true);
         
         $this->pdfRender = new Dompdf($options);
