@@ -64,7 +64,7 @@ class DompdfReport implements ReportInterface
     {
         $this->html = $this->htmlReport->render($document, $parameters);
 
-        return $this->buildPdf($this->html,$document->getName());
+        return $this->buildPdf($this->html);
     }
 
     /**
@@ -87,11 +87,11 @@ class DompdfReport implements ReportInterface
 
    
 
-    private function buildPdf($html,$filename)
+    private function buildPdf($html)
     {
         $this->pdfRender->loadHtml($html);
         $this->pdfRender->render();
-        return $this->pdfRender->stream($filename);
+        return $this->pdfRender->output();
     }
     
 }
